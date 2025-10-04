@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+interface City {
+  name: string
+  population: number
+}
+
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,7 +13,11 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
-
+  MyName: string = "lbn"
+  MyList: string[] = ["1", "2", "3"]
   constructor() {}
+  btn_click(){
+    this.MyName = this.MyName + "!"
+  }
 
 }
