@@ -13,10 +13,17 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+  <ion-row *ngFor="let name of  ">
+    <ion-col>1</ion-col>
+    <ion-col>2</ion-col>
+    <ion-col>3</ion-col>
+  </ion-row>
+</ion-grid>
   <div id="container">
     <ion-list>
       <ion-item *ngFor="let element of MyList">
-        <ion-label>{{MyList}}</ion-label>
+        <ion-label>{{element}}</ion-label>
       </ion-item>
     </ion-list>
     <strong>Ready to create an app?</strong>
@@ -24,13 +31,9 @@
   </div>
 
 
-  <ion-button>DANIEL</ion-button>
-  <ion-button shape="round">Round</ion-button>
-  <ion-button>
-    <ion-icon slot="icon-only" name="heart"></ion-icon>
-  </ion-button>
+
   <ion-button shape="round" (click)="btn_click()">
-    <ion-icon slot="icon-only" name="heart"></ion-icon>
+    кнопка
   </ion-button>
 
 </ion-content>
