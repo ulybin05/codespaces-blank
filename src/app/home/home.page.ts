@@ -15,6 +15,7 @@ interface City {
 export class HomePage {
   MyName: string = "lbn"
   MyList: string[] = ["1", "2", "3"]
+  MyCities: 
   constructor() {}
   btn_click(){
     this.MyName = this.MyName + "!"
