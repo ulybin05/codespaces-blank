@@ -14,10 +14,9 @@
     </ion-toolbar>
   </ion-header>
   <ion-grid>
-  <ion-row *ngFor="let name of  ">
-    <ion-col>1</ion-col>
-    <ion-col>2</ion-col>
-    <ion-col>3</ion-col>
+  <ion-row *ngFor="let item of MyCities">
+    <ion-col>{{item.name}}</ion-col>
+    <ion-col>{{item.population}}</ion-col>
   </ion-row>
 </ion-grid>
   <div id="container">
