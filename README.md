@@ -1,6 +1,7 @@
-Мой первый проект на IONIC
-Подготовка
+# Мой первый проект на IONIC
+ Подготовка ПК
+```bash
 npm install -g @ionic/cli
 ionic start
-
-https://test-bc740.web.app
+```
+[Документация](https://test-bc740.web.app)
